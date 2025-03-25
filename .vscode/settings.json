@@ -1,0 +1,8 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/home/allyedge/esp/esp-idf",
+  "idf.pythonInstallPath": "/usr/bin/python3",
+  "idf.openOcdConfigs": ["board/esp32p4-builtin.cfg"],
+  "idf.port": "/dev/ttyUSB0",
+  "idf.toolsPath": "/home/allyedge/.espressif"
+}

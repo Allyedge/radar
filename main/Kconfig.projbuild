@@ -1,0 +1,47 @@
+menu "Servo Configuration"
+  config SERVO_OUTPUT_GPIO
+    int "Servo Output GPIO"
+    default 18
+    range 0 35
+    help
+      GPIO pin number for servo output. This is the GPIO pin number that will be used to control the servo.
+
+  config STEP_SIZE
+    int "Step Size"
+    default 5
+    range 1 180
+    help
+      Step size in degrees for servo movement.
+endmenu
+
+menu "Sensor Configuration"
+  config SENSOR_TRIGGER_GPIO
+    int "Sensor Trigger GPIO"
+    default 25
+    range 0 35
+    help
+      GPIO pin number for sensor trigger. This is the GPIO pin number that will be used to trigger the sensor.
+
+  config SENSOR_ECHO_GPIO
+    int "Sensor Echo GPIO"
+    default 26
+    range 0 35
+    help
+      GPIO pin number for sensor echo. This is the GPIO pin number that will be used to read the sensor echo.
+endmenu
+
+menu "Task Configuration"
+  config ALERT_DISTANCE_CM
+    int "Alert Distance (cm)"
+    default 50
+    range 0 400
+    help
+      Distance in centimeters at which the alert task will be triggered.
+
+  config ANGLE_CLUSTER_TOLERANCE
+    int "Angle Cluster Tolerance"
+    default 25
+    range 0 180
+    help
+      Tolerance in degrees for clustering angles. Angles within this tolerance will be considered the same.
+endmenu
